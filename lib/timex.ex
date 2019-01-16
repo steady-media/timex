@@ -173,7 +173,7 @@ defmodule Timex do
   """
   @spec from_unix(secs :: non_neg_integer, :native | System.time_unit()) ::
           DateTime.t() | no_return
-  def from_unix(secs, unit \\ :seconds), do: DateTime.from_unix!(secs, unit)
+  def from_unix(secs, unit \\ :second), do: DateTime.from_unix!(secs, unit)
 
   @doc """
   Formats a date/time value using the given format string (and optional formatter).
